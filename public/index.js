@@ -31,6 +31,7 @@ function deleteCard(id) {
     axios.delete(`http://localhost:4004/cities/${id}`)
         .then(() => getCities())
         .catch(err => console.log(err))
+
 }
 
 function getCities() {
